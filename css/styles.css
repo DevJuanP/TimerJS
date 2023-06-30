@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+html{
+    height: 100%;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%)
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.clock{
+    font-size: 32px;
+    text-shadow: -1px 0px 15px rgba(0,0,0, 0.5);
+    color: rgb(230,230,230);;
+}
+.number{
+    display: inline-block;
+    width: 140px;
+    font-size: 128px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    text-shadow: -1px 0px 15px rgba(27,27,27, 0.25);
+    border: none;
+    color: rgb(230,230,230);
+    background-color: transparent;
+}
+.buttons button{
+    margin: 0 7px;
+    padding: 30px;
+    border: none;
+    border-radius: 50%;
+}
+
+#play{
+    background-image: url(../img/play.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#stop{
+    background-image: url(../img/stop.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* #pause{
+    background-image: url(../img/pause.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+#play:active{
+    background-color: lightgreen;
+    transition: 0.1s;
+}
+
+#stop:active{
+    background-color: lightcoral;
+    transition: 0.1s;
+}
